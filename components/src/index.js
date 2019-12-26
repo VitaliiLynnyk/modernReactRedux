@@ -8,9 +8,41 @@ import { CommentDetail } from './CommentDetail';
 const App = () => {
   return (
     <div
-      className="ui container comments centered grid"
-      style={{ marginTop: '50px' }}
+      className="ui fluid container comments"
+      style={{ margin: '50px auto' }}
     >
+      <ApprovalCard>
+        <CommentDetail
+          avatar={faker.image.avatar()}
+          author={faker.name.firstName()}
+          timeAgo={faker.date.weekday()}
+          content={faker.lorem.sentence()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          avatar={faker.image.avatar()}
+          author={faker.name.firstName()}
+          timeAgo={faker.date.weekday()}
+          content={faker.lorem.sentence()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          avatar={faker.image.avatar()}
+          author={faker.name.firstName()}
+          timeAgo={faker.date.weekday()}
+          content={faker.lorem.sentence()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          avatar={faker.image.avatar()}
+          author={faker.name.firstName()}
+          timeAgo={faker.date.weekday()}
+          content={faker.lorem.sentence()}
+        />
+      </ApprovalCard>
       <ApprovalCard>
         <CommentDetail
           avatar={faker.image.avatar()}

@@ -4,7 +4,7 @@ export const ApprovalCard = props => {
   const { children } = props;
 
   return (
-    <div className="ui cards">
+    <div className="ui card">
       <div className="content">{children}</div>
       <div class="extra content">
         <div class="ui two buttons">
